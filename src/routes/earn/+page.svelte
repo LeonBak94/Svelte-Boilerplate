@@ -23,7 +23,7 @@
 	setContext('getImage', getImage);
 </script>
 
-<div class="flex flex-col items-center justify-center gap-4">
+<div class="flex flex-col items-center justify-center w-full h-full">
 	<Count />
 	<div>
 		{#if loading}
