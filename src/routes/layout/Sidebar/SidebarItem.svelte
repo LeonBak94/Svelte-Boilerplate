@@ -25,7 +25,7 @@
 	</div>
 	{:else}
 		<div
-			class="ml-4 px-4 pt-2 pb-2 gap-2 text-sm text-gray-100 flex hover:text-red-100 font-medium border-l
+			class="flex flex-row items-center ml-4 px-4 pt-2 pb-2 gap-2 text-sm text-gray-100 hover:text-red-100 font-medium border-l
 			{selected ? 'bg-gradient-to-r bg-transparent from-[#ff5a5c1a] to-[#ff5a5c00] text-red-100 border-l-red-100' : ' border-l-gray-500'}"
 		>
 			<span>{label}</span>
