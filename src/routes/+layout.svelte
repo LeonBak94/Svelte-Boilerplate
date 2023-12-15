@@ -2,7 +2,8 @@
 	import '../app.css';
 	import Navbar from './layout/Navbar.svelte';
 	import Sidebar from './layout/Sidebar/Sidebar.svelte';
-	// import Error from './error/+page.svelte'
+	import Error from './error/+page.svelte'
+	import Footer from './layout/Footer.svelte';
 
 	import { page } from '$app/stores';
 </script>
@@ -14,15 +15,18 @@
 </svelte:head>
 
 <svelte>
-	<div class="flex w-full flex-col h-screen">
+	<div class="flex flex-col h-screen">
 		<Navbar />
-		<div class="flex w-full flex-1">
+		<div class="flex flex-1 w-full">
 			<Sidebar />
-			{#if $page.status!=404}
-				<slot />
-				{:else}
-					<!-- <Error /> -->
-			{/if}		
+			<div class="flex flex-col w-full">
+				{#if $page.status!=404}
+					<slot />
+					{:else}
+						<Error />
+				{/if}
+				<Footer />
+			</div>		
 		</div>
 	</div>
 </svelte>

@@ -11,11 +11,11 @@
 
 	import SidebarItem from './SidebarItem.svelte';
 
-	import Earn from '../../../components/Icon/Earn.svelte';
-	import Offers from '../../../components/Icon/Offers.svelte';
-	import Cashout from '../../../components/Icon/Cash.svelte';
-	import Affiliate from '../../../components/Icon/Affiliate.svelte';
-	import RPS from '../../../components/Icon/RPS.svelte';
+	import Earn from '../../../components/Icon/Sidebar/Earn.svelte';
+	import Offers from '../../../components/Icon/Sidebar/Offers.svelte';
+	import Cashout from '../../../components/Icon/Sidebar/Cash.svelte';
+	import Affiliate from '../../../components/Icon/Sidebar/Affiliate.svelte';
+	import RPS from '../../../components/Icon/Sidebar/RPS.svelte';
 
 	export const items = [
 		{ label: 'Earn', icon: Earn, link: 'earn', children: [] },
@@ -35,7 +35,7 @@
 </script>
 
 <div
-	class="flex flex-col w-[200px] bg-dark-100 overflow-y-auto bottom-0 top-16 px-2 py-4  scrollbar-hide"
+	class="flex flex-col w-[250px] bg-dark-100 overflow-y-auto bottom-0 top-16 px-2 py-4  scrollbar-hide"
 >
 	<div class="flex flex-col gap-5 hover:cursor-pointer">
 		{#each items as { label, icon, link, children }}
