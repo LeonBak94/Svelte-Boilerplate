@@ -1,4 +1,4 @@
 <script lang="ts">
 </script>
 
-<div class="flex flex-col items-center justify-center gap-4">Offers</div>
+<div class="flex flex-col items-center justify-center w-full h-full">App</div>

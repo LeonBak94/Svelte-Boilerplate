@@ -2,6 +2,9 @@
 	import '../app.css';
 	import Navbar from './layout/Navbar.svelte';
 	import Sidebar from './layout/Sidebar/Sidebar.svelte';
+	// import Error from './error/+page.svelte'
+
+	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -15,9 +18,11 @@
 		<Navbar />
 		<div class="flex w-full flex-1">
 			<Sidebar />
-			<div class="content">
+			{#if $page.status!=404}
 				<slot />
-			</div>
+				{:else}
+					<!-- <Error /> -->
+			{/if}		
 		</div>
 	</div>
 </svelte>
