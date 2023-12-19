@@ -1,6 +1,6 @@
 <script>
 	import { createDisclosure } from 'svelte-headlessui';
-	const refund = createDisclosure({ label: 'Refund Policy', expanded: true });
+	const refund = createDisclosure({ label: 'Refund Policy', expanded: false });
 
 	import { page } from '$app/stores';
 	import { afterUpdate } from 'svelte';

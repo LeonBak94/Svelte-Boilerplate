@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Down from '../../../components/Icon/Down.svelte';
+	import Down from '../../../components/Icon/Sidebar/Down.svelte';
 	export let icon:any 
 	export let selected:boolean = false
 	export let label:string = ''
